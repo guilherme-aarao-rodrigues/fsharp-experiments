@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Client.fs" />
+        
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SharedLib\SharedLib.fsproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Fable.Remoting.Client" Version="7.21.0" />
+    </ItemGroup>
+
+</Project>
